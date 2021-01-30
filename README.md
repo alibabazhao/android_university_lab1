@@ -20,7 +20,12 @@ This is the starter code for lab 1, see [Android University Course - Lab 1](http
 - [X] Bonus Checkpoint #2 - Try to figure out how to make the grid show 4 columns rather than 2 when you rotate your device landscape mode.
 
 ### App Walkthough GIF
+Here's a walkthrough of implemented user stories:
 
+<img src='walkThrough1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkThrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ### Open-source libraries used
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
