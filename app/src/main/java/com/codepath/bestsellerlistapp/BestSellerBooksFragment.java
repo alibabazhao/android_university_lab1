@@ -1,14 +1,8 @@
 package com.codepath.bestsellerlistapp;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
-
-import androidx.core.widget.ContentLoadingProgressBar;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +14,11 @@ import com.codepath.bestsellerlistapp.networking.CallbackResponse;
 import com.codepath.bestsellerlistapp.networking.NYTimesApiClient;
 
 import java.util.List;
+
+import androidx.core.widget.ContentLoadingProgressBar;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * A fragment representing a list of Items.
@@ -49,7 +48,12 @@ public class BestSellerBooksFragment extends Fragment implements OnListFragmentI
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.list);
 
         Context context = view.getContext();
-        recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
+
+        if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+            recyclerView.setLayoutManager(new GridLayoutManager(context, 4));
+        }
+        else
+            recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
         updateAdapter(progressBar, recyclerView);
         return view;
     }

@@ -22,7 +22,6 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
 
     private final List<BestSellerBook> books;
     private final OnListFragmentInteractionListener mListener;
-
     public BestSellerBooksRecyclerViewAdapter(List<BestSellerBook> items, OnListFragmentInteractionListener listener) {
         books = items;
         mListener = listener;
