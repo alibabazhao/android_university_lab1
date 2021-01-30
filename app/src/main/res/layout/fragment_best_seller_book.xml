@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="@id/book_image"
             android:fontFamily="serif"
-            android:textSize="22sp"
+            android:textSize="18sp"
             tools:text="1" />
 
         <ImageView
