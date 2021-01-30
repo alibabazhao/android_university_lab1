@@ -20,13 +20,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="@id/book_image"
             android:fontFamily="serif"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:text="1" />
 
         <ImageView
             android:id="@+id/book_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            tools:srcCompat="@tools:sample/avatars" />
     </RelativeLayout>
 
 
@@ -35,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?attr/textAppearanceListItem"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="DECON KING KOONG" />
 
     <TextView
         android:id="@+id/book_author"
@@ -43,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:textAppearance="?attr/textAppearanceListItem"
-        tools:text="Elin Hilderbrand" />
+        tools:text="James McBride" />
 
     <TextView
         android:id="@+id/book_description"
@@ -53,7 +56,8 @@
         android:ellipsize="end"
         android:fontFamily="sans-serif-light"
         android:maxLines="5"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="In 1969, screts in a South Brooklyn neighborhood are uncovered when a church deacon known..." />
 
     <Button
         android:id="@+id/buy_button"
